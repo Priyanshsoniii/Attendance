@@ -15,15 +15,15 @@ export const RegisterPage = () => {
   return (
     <Wrapper>
       <h2>Register</h2>
-      <form>
-        <div>
+        <div class = "register">
+          <form>
           <label>Email:</label>
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-        </div>
+        
         <div>
           <label>Password:</label>
           <input
@@ -58,6 +58,7 @@ export const RegisterPage = () => {
         </div>
         <button type="button" onClick={handleRegister}>Register</button>
       </form>
+      </div>
     </Wrapper>
   );
 }

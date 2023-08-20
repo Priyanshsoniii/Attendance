@@ -1,16 +1,6 @@
 import { styled } from "styled-components";
 
 const Wrapper = styled.section`
-body, html {
-    height: 100%;
-  }
-  body{
-    margin:0;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
   
   .bg-img {
     background-image: url("https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bG9naW58ZW58MHx8MHx8fDA%3D&w=1000&q=80");
