@@ -7,7 +7,7 @@ export const RegisterPage = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [contact, setContact] = useState('');
-  // const [role, setRole] = useState('');
+  const [role, setRole] = useState('');
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -60,8 +60,8 @@ export const RegisterPage = () => {
                 <option disabled selected>--ROLE--</option>
                 <option>Student</option>
                 <option>Faculty</option>
+                onChange={(e) => setRole(e.target.value)}
             </select>
-            {/* onChange={(e) => setRole(e.target.value)} */}
         </div>
         <button type="submit" onClick={handleRegister}>Register</button>
        </form>

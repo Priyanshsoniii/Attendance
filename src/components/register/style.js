@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-
+//   # root height 100vh display:flex display-direction: column 
 const Wrapper = styled.section`
   
   .register {
