@@ -1,15 +1,21 @@
 import React, { useState } from 'react';
 import Wrapper from './style';
+import axios from 'axios';
 
 export const RegisterPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [contact, setContact] = useState('');
-  // const [role, setRole] = useState('');
+  const [role, setRole] = useState('');
 
-  const handleRegister = () => {
-    
+  const handleRegister = (e) => {
+    e.preventDefault();
+    axios.post("https://server-api1-li2k.onrender.com/api/user/add",{
+     email,password,confirmPassword,contact,role,
+    }).then((res) => {console.log(res.data);}).catch((err) => {console.log(err.message);}).finally(() => {
+      console.log("heeeyyy register here done");
+    });
   };
 
   return (
@@ -54,8 +60,8 @@ export const RegisterPage = () => {
                 <option disabled selected>--ROLE--</option>
                 <option>Student</option>
                 <option>Faculty</option>
+                onChange={(e) => setRole(e.target.value)}
             </select>
-            {/* onChange={(e) => setRole(e.target.value)} */}
         </div>
         <button type="submit" onClick={handleRegister}>Register</button>
        </form>

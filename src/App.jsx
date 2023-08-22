@@ -7,9 +7,9 @@ import Header from './components/header';
 export const App = () => {
   return (
     <BrowserRouter>
-      { <Header /> }
+      {/* { <Header /> } */}
       <Routes>
-          <Route path="/login" element = {<LoginPage />} />
+          <Route path="/" element = {<LoginPage />} />
           <Route path="/register" element = {<RegisterPage />} />
       </Routes>
     </BrowserRouter>
