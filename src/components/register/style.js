@@ -1,20 +1,10 @@
 import { styled } from "styled-components";
 
 const Wrapper = styled.section`
-body, html {
-    height: 100%;
-  }
-  body{
-    margin:0;
-  }
   
-  * {
-    box-sizing: border-box;
-  }
-  
-  .bg-img {
+  .register {
     background-image: url("https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bG9naW58ZW58MHx8MHx8fDA%3D&w=1000&q=80");
-    min-height: 1000px;
+    min-height: 90vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,7 +14,7 @@ body, html {
     align-items: center;
   }
   
-  .container {
+  form {
     position: absolute;
     margin: 20px;
     max-width: 300px;
@@ -34,20 +24,23 @@ body, html {
     border-radius: 5px;
   }
   
-  input[type=text], input[type=password] {
-    width: 100%;
+  input[type=text], input[type=password],input[type=email] {
     padding: 15px;
-    margin: 5px 0 22px 0;
+    margin: 5px 5px ;
     border: none;
+    width :100%;
     background: #f1f1f1;
+    box-sizing : border-box;
+    border: 5px solid thick grey;
   }
   
-  input[type=text]:focus, input[type=password]:focus {
+  input[type=text]:focus, input[type=password]:focus, input[type=email] {
     background-color: #ddd;
     outline: none;
+    
   }
 
-  .btn {
+  input[type=submit]{
     background-color: #04AA6D;
     color: white;
     padding: 16px 20px;
@@ -55,10 +48,13 @@ body, html {
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
+    display:block;
+    
   }
   
-  .btn:hover {
+  input[type=submit]:hover {
     opacity: 1;
+    
   }
 `
 export default Wrapper
