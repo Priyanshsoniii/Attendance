@@ -21,7 +21,7 @@ export const RegisterPage = () => {
   return (
     <Wrapper>
       
-        <div class = "register">
+        <div className = "register">
           <form>
           <h2>Register</h2>
           <input
@@ -56,11 +56,10 @@ export const RegisterPage = () => {
           />
         </div>
         <div>
-            <select name="" id="userRole">
-                <option disabled selected>--ROLE--</option>
+            <select onChange={(e) => setRole(e.target.value)}>
+                <option value disabled>--ROLE--</option>
                 <option>Student</option>
                 <option>Faculty</option>
-                onChange={(e) => setRole(e.target.value)}
             </select>
         </div>
         <button type="submit" onClick={handleRegister}>Register</button>

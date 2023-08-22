@@ -7,10 +7,11 @@ import Header from './components/header';
 export const App = () => {
   return (
     <BrowserRouter>
-      {/* { <Header /> } */}
+      { <Header /> }
       <Routes>
-          <Route path="/" element = {<LoginPage />} />
-          <Route path="/register" element = {<RegisterPage />} />
+        
+          <Route path="/login" exact element = { <LoginPage /> } />
+          <Route path="/register" exact element = { <RegisterPage /> } />
       </Routes>
     </BrowserRouter>
   )
