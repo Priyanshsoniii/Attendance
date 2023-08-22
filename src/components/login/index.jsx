@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import Wrapper from "./style";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 export const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = () => {
-    console.log("heeeyyy login here done");
+  const handleLogin = (e) => {
+    e.preventDefault();
+    axios.post("https://server-api1-li2k.onrender.com/api/user/login",{
+     email,password,
+    }).then((res) => {console.log(res.data);}).catch((err) => {console.log(err.message);}).finally(() => {
+      console.log("heeeyyy login here done");
+    });
   };
 
   return (

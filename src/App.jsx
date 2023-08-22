@@ -9,7 +9,7 @@ export const App = () => {
     <BrowserRouter>
       {/* <Header /> */}
       <Routes>
-          <Route path="/login" element = {<LoginPage />} />
+          <Route path="/" element = {<LoginPage />} />
           <Route path="/register" element = {<RegisterPage />} />
       </Routes>
     </BrowserRouter>

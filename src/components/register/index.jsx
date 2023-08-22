@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Wrapper from './style';
+import axios from 'axios';
 
 export const RegisterPage = () => {
   const [email, setEmail] = useState('');
@@ -8,8 +9,13 @@ export const RegisterPage = () => {
   const [contact, setContact] = useState('');
   const [role, setRole] = useState('');
 
-  const handleRegister = () => {
-    
+  const handleRegister = (e) => {
+    e.preventDefault();
+    axios.post("https://server-api1-li2k.onrender.com/api/user/add",{
+     email,password,confirmPassword,contact,role,
+    }).then((res) => {console.log(res.data);}).catch((err) => {console.log(err.message);}).finally(() => {
+      console.log("heeeyyy register here done");
+    });
   };
 
   return (
