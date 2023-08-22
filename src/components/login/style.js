@@ -37,6 +37,7 @@ const Wrapper = styled.section`
             
           }
           
+          
           input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
             background-color: #ddd;
             outline: none;
