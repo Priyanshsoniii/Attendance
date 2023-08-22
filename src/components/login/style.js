@@ -11,7 +11,8 @@ const Wrapper = styled.section`
       width: 100%;
       background-repeat: no-repeat;
       background-size: cover;
-      height: 100vh;
+      min-height: 90vh;
+      height:100%;
       
       form{
         
@@ -29,8 +30,8 @@ const Wrapper = styled.section`
           input[type=text], input[type=password], input[type=email] {
             width: 100%;
             box-sizing: border-box;
-            padding: 15px;
-            margin: 5px 0 18px 0;
+            padding: 10px;
+            margin: 5px 5px ;
             border: 5px solid thick grey;
             background: #f1f1f1;
             
