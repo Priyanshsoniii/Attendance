@@ -6,12 +6,13 @@ import Header from './components/header';
 
 export const App = () => {
   return (
-    <BrowserRouter>
-       { <Header /> } 
+    <BrowserRouter> 
+      
+      { <Header /> }
       <Routes>
-          <Route path="/" element = {<LoginPage />} />
-          <Route path="/register" element = {<RegisterPage />} />
-          <Route path="/*" element = {<not found />}/>
+        
+          <Route path="/login" exact element = { <LoginPage /> } />
+          <Route path="/register" exact element = { <RegisterPage /> } />
       </Routes>
     </BrowserRouter>
   )
