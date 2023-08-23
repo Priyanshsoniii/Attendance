@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { LoginPage } from "./components/login"
 import { RegisterPage }  from "./components/register"
 import Header from './components/header';
+import List from './components/list';
+import Error from './components/error';
 
 export const App = () => {
   return (
@@ -13,6 +15,9 @@ export const App = () => {
         
           <Route path="/login" exact element = { <LoginPage /> } />
           <Route path="/register" exact element = { <RegisterPage /> } />
+          <Route path="/list" exact element = { <List /> } />
+          <Route path = "/*" element = { <Error /> } />
+           
       </Routes>
     </BrowserRouter>
   )

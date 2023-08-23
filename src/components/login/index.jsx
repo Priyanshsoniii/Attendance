@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 export const LoginPage = () => {
-  const [email, setEmail] = useState("");
+  // const [email, setEmail] = useState("");
   const [contact, setContact] = useState("")
   const [password, setPassword] = useState("");
 
