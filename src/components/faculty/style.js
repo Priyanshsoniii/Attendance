@@ -10,7 +10,7 @@ const Wrapper = styled.section`
 
     .sections{
         display : flex;
-        flex-wrap : wrap;
+        flex-direction: column; 
     }
 
     .section{
@@ -20,6 +20,8 @@ const Wrapper = styled.section`
         line-height : 100px;
         flex : 1;
         border : solid thin #ccc;
+        color:red;
+        background-color: black;
         font-size : 1.2rem;
     }
 

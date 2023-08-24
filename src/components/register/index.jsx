@@ -30,38 +30,29 @@ export const RegisterPage = () => {
             placeholder ="Email"
             onChange={(e) => setEmail(e.target.value)}
           />
-        
-        <div>
           <input
             type="password"
             value={password}
             placeholder ="Password"
             onChange={(e) => setPassword(e.target.value)}
-          />
-        </div>
-        <div>
+          /> 
           <input
             type="password"
             value={confirmPassword}
             placeholder ="Confirm Password"
             onChange={(e) => setConfirmPassword(e.target.value)}
           />
-        </div>
-        <div>
           <input
             type="contact"
             value={contact}
             placeholder ="Contact"
             onChange={(e) => setContact(e.target.value)}
           />
-        </div>
-        <div>
-            <select onChange={(e) => setRole(e.target.value)}>
+          <select onChange={(e) => setRole(e.target.value)}>
                 <option value disabled>--ROLE--</option>
                 <option>Student</option>
                 <option>Faculty</option>
-            </select>
-        </div>
+          </select>
         <button type="submit" onClick={handleRegister}>Register</button>
        </form>
        </div>

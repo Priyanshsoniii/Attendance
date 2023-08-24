@@ -8,6 +8,9 @@
         <Link to = "/login">Login</Link>&nbsp;
         <Link to = "/register">Register</Link>&nbsp;
         <Link to = "/list">List</Link>&nbsp;
+        <Link to = "/attendance">Attendance</Link>
+          <Link to = "/faculty">Faculty</Link> 
+          <Link to = "/student">Student</Link> 
     </header>
    );
  };

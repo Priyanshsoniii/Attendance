@@ -3,17 +3,16 @@ import { styled } from "styled-components";
 const Wrapper = styled.form`
   .bg-img {
       background-image: url("https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bG9naW58ZW58MHx8MHx8fDA%3D&w=1000&q=80");
-      width: 100%;
-      display:flex;
-      align-item:center;
-      justified-content:center;
+      // width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background-repeat: no-repeat;
       background-size: cover;
       min-height: 100vh;
       height:100%;
     
       form{
-      
             .container{
                         font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                         position: center;
@@ -23,6 +22,13 @@ const Wrapper = styled.form`
                         background-color: #f1f1f1;
                         opacity: .9;
                         border-radius: 5px;
+
+
+                        h1{
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;                      
+                        }
 
 
                         input[type=text], input[type=password], input[type=email] {
@@ -39,9 +45,9 @@ const Wrapper = styled.form`
                           border: 5px solid thick grey;
                         }
 
-                        .btn {
+                        button {
                           background-color: #04AA6D;
-                          color: white;
+                          color: red;
                           padding: 16px 20px;
                           border: none;
                           border-radius:5px;
@@ -50,32 +56,17 @@ const Wrapper = styled.form`
                           opacity: 0.9;
                         }
 
-                        .btn:hover {
+                        button:hover {
                           opacity: 1;
                         }
-
-                        .btn {
-                          background-color: #04AA6D;
-                          color: white;
-                          padding: 16px 20px;
-                          border: none;
-                          cursor: pointer;
-                          width: 100%;
-                          opacity: 0.9;
-                        }
-                        
-                        .btn:hover {
-                          opacity: 1;
-                        }
-                    
                         .containerSignin {
                           p{
                             text-align : center;
                           }
                         }
-              }
-        }
-    }
+             }
+       }
+  }
 
 `
 export default Wrapper

@@ -23,24 +23,16 @@ export const LoginPage = () => {
           <form>
             <div className="container">
               <h1>Login</h1>
-              <hr />
               <input
                 type="text"
                 placeholder="Email"
-                name="email"
-                id="email"
                 required
                 value={contact}
                 onChange={(e) => setContact(e.target.value)}
               />
-              <br />
-
-
               <input
                 type="password"
                 placeholder="Password"
-                name="psw"
-                id="psw"
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
