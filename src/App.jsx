@@ -10,7 +10,7 @@ export const App = () => {
   return (
     <BrowserRouter> 
       
-      { <Header /> }
+      {/* { <Header /> } */}
       <Routes>
         
           <Route path="/login" exact element = { <LoginPage /> } />

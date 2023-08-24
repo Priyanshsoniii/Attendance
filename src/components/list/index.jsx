@@ -5,8 +5,11 @@ import Wrapper from './style';
 const List = () => {
   return (
     <Wrapper>
-        <Link to = "/register"></Link>
-
+      <header>
+       <h1>Attendance</h1>
+      </header>
+        <Link to = "/register">Register hererer</Link>
+       
         <table border="1" >
   <tr>
     <th>I</th>
