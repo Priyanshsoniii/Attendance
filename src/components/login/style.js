@@ -21,7 +21,7 @@ const Wrapper = styled.section`
           position: center;
           margin: 20px;
           max-width: 400px;
-          padding: 16px;
+          padding: 26px;
           background-color: #f1f1f1;
           opacity: .9;
           border-radius: 5px;
@@ -60,6 +60,15 @@ const Wrapper = styled.section`
             opacity: 1;
           }
         }
+
+        
+          div h1{
+            text-align : center;
+            text-decoration : underline;
+          }
+        
+        
+  
   
       }
        
